@@ -13,7 +13,7 @@
  * Version:     0.1
  * Author:      Daniel Ménard
  * Author URI:  http://docalist.org/
- * Text Domain: docalist-reset-screen-options
+ * Text Domain: drso
  * Domain Path: /languages
  *
  * @package     Docalist
@@ -26,8 +26,9 @@ namespace Docalist\ResetScreenOptions;
 
 use WP_Screen;
 
-// Charge les fichiers de traduction du plugin (on a une seule chaine !)
-load_plugin_textdomain('drso', false, 'docalist-reset-screen-options/languages');
+// Charge les fichiers de traduction du plugin
+// plus tard : on a une seule chaine
+// load_plugin_textdomain('drso', false, 'docalist-reset-screen-options/languages');
 
 /**
  * Retourne les options actuelles de l'utilisateur pour l'écran passé en
