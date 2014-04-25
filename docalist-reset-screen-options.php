@@ -15,6 +15,7 @@
  * Author URI:  http://docalist.org/
  * Text Domain: drso
  * Domain Path: /languages
+ * GitHub Plugin URI: https://github.com/docalist/docalist-reset-screen-options
  *
  * @package     Docalist
  * @subpackage  ResetScreenOptions
