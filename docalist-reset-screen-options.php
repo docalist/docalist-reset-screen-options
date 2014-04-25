@@ -10,7 +10,7 @@
  * Plugin Name: Docalist Reset Screen Options
  * Plugin URI:  http://docalist.org/
  * Description: Docalist: Reset Screen Options.
- * Version:     0.2.0
+ * Version:     0.2
  * Author:      Daniel Ménard
  * Author URI:  http://docalist.org/
  * Text Domain: drso
@@ -21,7 +21,7 @@
  * @subpackage  ResetScreenOptions
  * @author      Daniel Ménard <daniel.menard@laposte.net>
  */
-//test github update
+
 namespace Docalist\ResetScreenOptions;
 
 use WP_Screen;
