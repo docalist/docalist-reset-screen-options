@@ -21,7 +21,7 @@
  * @subpackage  ResetScreenOptions
  * @author      Daniel Ménard <daniel.menard@laposte.net>
  */
-
+//test github update
 namespace Docalist\ResetScreenOptions;
 
 use WP_Screen;
