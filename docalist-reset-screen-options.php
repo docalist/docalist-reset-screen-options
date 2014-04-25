@@ -10,7 +10,7 @@
  * Plugin Name: Docalist Reset Screen Options
  * Plugin URI:  http://docalist.org/
  * Description: Docalist: Reset Screen Options.
- * Version:     0.2
+ * Version:     0.2.0
  * Author:      Daniel Ménard
  * Author URI:  http://docalist.org/
  * Text Domain: drso
