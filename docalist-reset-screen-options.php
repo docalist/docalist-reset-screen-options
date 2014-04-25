@@ -19,7 +19,6 @@
  * @package     Docalist
  * @subpackage  ResetScreenOptions
  * @author      Daniel Ménard <daniel.menard@laposte.net>
- * @version     SVN: $Id$
  */
 
 namespace Docalist\ResetScreenOptions;
