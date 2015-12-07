@@ -10,7 +10,7 @@
  * Plugin Name: Docalist Reset Screen Options
  * Plugin URI:  http://docalist.org/
  * Description: Docalist: Reset Screen Options.
- * Version:     0.2
+ * Version:     0.1.2
  * Author:      Daniel Ménard
  * Author URI:  http://docalist.org/
  * Text Domain: drso
@@ -21,7 +21,6 @@
  * @subpackage  ResetScreenOptions
  * @author      Daniel Ménard <daniel.menard@laposte.net>
  */
-
 namespace Docalist\ResetScreenOptions;
 
 use WP_Screen;
@@ -45,7 +44,8 @@ use WP_Screen;
  * @return array un tableau contenant les noms des options trouvées,
  * éventuellement vide.
  */
-function drsoScreenOptions($screen, $firstOnly = false) {
+function drsoScreenOptions($screen, $firstOnly = false)
+{
     global $wpdb;
 
     $user = get_current_user_id();
@@ -55,7 +55,7 @@ function drsoScreenOptions($screen, $firstOnly = false) {
     $keys = "('manage{$screen}columnshidden','screen_layout_$screen','meta-box-order_$screen','closedpostboxes_$screen','metaboxhidden_$screen')";
 
     $sql = "SELECT DISTINCT meta_key FROM $wpdb->usermeta WHERE user_id=$user AND meta_key IN $keys";
-    $firstOnly && $sql .= " LIMIT 1";
+    $firstOnly && $sql .= ' LIMIT 1';
 
     return $wpdb->get_col($sql);
 }
@@ -67,11 +67,11 @@ function drsoScreenOptions($screen, $firstOnly = false) {
  * - http://plugins.svn.wordpress.org/raw-html/trunk/include/screen-options/
  */
 
-/**
+/*
  * Ajoute une option "reset" dans les options de l'écran si l'utilisateur a
  * modifié les options par défaut.
  */
-add_filter('screen_settings', function($html, WP_Screen $screen) {
+add_filter('screen_settings', function ($html, WP_Screen $screen) {
     // On ne fait quelque chose que si l'utilisateur a modifié les options
     if (drsoScreenOptions($screen->id, true)) {
         // Ajoute le lien en fin de html
@@ -101,17 +101,17 @@ add_filter('screen_settings', function($html, WP_Screen $screen) {
     return $html;
 }, 10, 2);
 
-/**
+/*
  * Handler de la requête ajax
  */
-add_action('wp_ajax_docalist_reset_screen_options', function() {
+add_action('wp_ajax_docalist_reset_screen_options', function () {
     // Récupère l'écran à réinitialiser et nettoie
     if (empty($_REQUEST['screen']) || '' === $screen = sanitize_key($_REQUEST['screen'])) {
         die(0);
     }
 
     $user = get_current_user_id();
-    foreach(drsoScreenOptions($screen) as $option) {
+    foreach (drsoScreenOptions($screen) as $option) {
         delete_user_option($user, $option, true);
     }
     die(1);
