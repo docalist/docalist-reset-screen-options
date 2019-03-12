@@ -24,7 +24,7 @@
     
 	"require": {
 		"composer/installers": "~1.0",
-		"php": ">=5.4"
+		"php": ">=7.2"
 	},
 	
     "config" : {
@@ -35,7 +35,7 @@
     
     "extra" : {
         "branch-alias" : {
-            "dev-master" : "0.1-dev"
+            "dev-master" : "1.0-dev"
         }
     }
 }
