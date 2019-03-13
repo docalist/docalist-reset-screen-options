@@ -1,24 +1,21 @@
 <?php
 /**
- * This file is part of the 'Docalist Reset Screen Options' plugin.
+ * This file is part of Docalist Reset Screen Options.
  *
- * Copyright (C) 2014 Daniel Ménard
+ * Copyright (C) 2014-2019 Daniel Ménard
  *
  * For copyright and license information, please view the
- * LICENSE.txt file that was distributed with this source code.
+ * LICENSE file that was distributed with this source code.
  *
  * Plugin Name: Docalist Reset Screen Options
- * Plugin URI:  http://docalist.org/
+ * Plugin URI:  https://docalist.org/
  * Description: Docalist: Reset Screen Options.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Daniel Ménard
- * Author URI:  http://docalist.org/
+ * Author URI:  https://docalist.org/
  * Text Domain: drso
  * Domain Path: /languages
- * GitHub Plugin URI: https://github.com/docalist/docalist-reset-screen-options
  *
- * @package     Docalist
- * @subpackage  ResetScreenOptions
  * @author      Daniel Ménard <daniel.menard@laposte.net>
  */
 namespace Docalist\ResetScreenOptions;
