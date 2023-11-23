@@ -5,7 +5,7 @@
     "homepage": "https://docalist.org/",
 	"license": "GPL-2.0-or-later",
 
-	"authors": [ 
+	"authors": [
         {
             "name": "Daniel Ménard",
             "email": "daniel.menard@laposte.net",
@@ -16,23 +16,23 @@
 	"keywords": [
 		"docalist"
 	],
-    
+
     "support": {
         "issues": "https://github.com/docalist/docalist/issues",
         "forum": "https://groups.google.com/forum/#!forum/docalist-discuss"
     },
-    
+
 	"require": {
-		"composer/installers": "~1.0",
+        "composer/installers": "^1.0 || ^2.0",
 		"php": ">=7.2"
 	},
-	
+
     "config" : {
         "sort-packages" : true,
         "optimize-autoloader" : true,
         "classmap-authoritative" : true
     },
-    
+
     "extra" : {
         "branch-alias" : {
             "dev-master" : "1.0-dev"
